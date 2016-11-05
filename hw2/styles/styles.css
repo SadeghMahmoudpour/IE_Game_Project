@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../assets/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../assets/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../assets/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+html {
+    height: 100%;
+    background-color: #2874A6;
+}
+
+body {
+    margin: 0;
+    height: 80%;
+}
+
+.site_header {
+    background-color: #566573;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 64px;
+
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.header_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_image {
+    float: left;
+    padding: 10px 0 0;
+}
+
+.header_widget {
+    float: right;
+    text-align: right;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    line-height: 1;
+    width: 100%;
+}
+
+.menu .menu_item {
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .menu_item a {
+    display: block;
+    padding: 30px 0 30px 24px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.site_inner {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.login_card_outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.login_card_miidle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login_card_inner {
+    margin: 0 auto;
+    width: 320px;
+    height: 360px;
+    text-align: right;
+
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    background-color: #FAFAFA;
+
+    color: #757575;
+
+    border-radius: 4px;
+    border-color:  #abb2b9;
+}
+
+.card_header {
+    display: table;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card_body {
+    padding: 2rem 2rem 1rem;
+    position: relative;
+}
+
+.card_form {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.card_form .card_icon {
+    position: absolute;
+    width: 2rem;
+    /*text-align: left;*/
+    right: 0;
+}
+
+.card_form input {
+    margin-right: 2rem;
+    width: calc(100% - 3rem);
+    border-style: none none solid;
+    box-sizing: content-box;
+    height: 2.1rem;
+    background-color: transparent;
+    border-color:  #abb2b9;
+    /*margin-bottom: 1rem;*/
+    /*margin-top: 0.2rem;*/
+    /*padding: 0.5rem 0 0.6rem;*/
+}
