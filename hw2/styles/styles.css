@@ -76,6 +76,7 @@ body {
 .header_widget {
     float: right;
     text-align: right;
+    padding: 0 24px;
 }
 
 ol, ul {
@@ -141,7 +142,7 @@ a {
     color: #757575;
 
     border-radius: 4px;
-    border-color:  #abb2b9;
+    border-color: #abb2b9;
 }
 
 .card_header {
@@ -177,8 +178,39 @@ a {
     box-sizing: content-box;
     height: 2.1rem;
     background-color: transparent;
-    border-color:  #abb2b9;
+    border-color: #abb2b9;
+    text-align: right;
     /*margin-bottom: 1rem;*/
     /*margin-top: 0.2rem;*/
     /*padding: 0.5rem 0 0.6rem;*/
+}
+
+.canter_text {
+    text-align: center;
+}
+
+.btn {
+    color: #fff !important;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    margin: 6px;
+    padding: 0.6rem 2.13rem 0.85rem;
+    border: 0 none;
+    border-radius: 2px;
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #2bbbad;
+
+    text-align: center;
+    vertical-align: middle;
+}
+.btn:hover {
+    background-color: #30cfc0;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card_body a {
+    color: #757575;
+    text-decoration: underline;
 }
