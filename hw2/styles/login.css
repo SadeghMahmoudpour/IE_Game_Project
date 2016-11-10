@@ -1,0 +1,60 @@
+/* 	css rules for login.html page
+	author: 9231018;
+	date: 11-11-16;
+	version: 0.1;
+*/
+
+.card_form {
+    position: relative;
+    margin-bottom: 2rem;
+    direction: rtl;
+}
+
+.card_form .card_icon {
+    position: absolute;
+    width: 2rem;
+    right: 0;
+}
+
+.card_form input[type=text],
+.card_form input[type=password] {
+    margin-right: 2rem;
+    width: calc(100% - 3rem);
+    border-style: none none solid;
+    box-sizing: content-box;
+    height: 2.1rem;
+    background-color: transparent;
+    border-color: #e74c3c;
+    direction: rtl;
+}
+
+.card_form input[type=text]:focus,
+.card_form input[type=text]:valid,
+.card_form input[type=password]:focus,
+.card_form input[type=password]:valid {
+    box-shadow: none;
+    outline: none;
+    border-color: #2bbbad;
+}
+
+.card_form input[type=text]::-webkit-input-placeholder,
+.card_form input[type=password]::-webkit-input-placeholder {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_form input[type=text]:focus::-webkit-input-placeholder,
+.card_form input[type=text]:valid::-webkit-input-placeholder,
+.card_form input[type=password]:focus::-webkit-input-placeholder,
+.card_form input[type=password]:valid::-webkit-input-placeholder {
+    color: #1abc9c;
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+
+.card_form input[type=text]:focus + .card_icon,
+.card_form input[type=password]:focus + .card_icon {
+    color: #1abc9c;
+}

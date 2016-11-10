@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <meta charset="utf-8">
+
+    <title>ورود</title>
+    <meta name="description" content="ورود به سایت">
+    <meta name="author" content="9231018">
+
+    <link rel="stylesheet" href="../styles/hw2-global.css" type="text/css">
+    <link rel="stylesheet" href="../styles/login.css" type="text/css">
 </head>
 <body>
 <header class="site_header">
@@ -22,28 +27,28 @@
     </div>
 </header>
 <div class="site_inner">
-    <div class="login_card_outer">
-        <div class="login_card_miidle">
-            <div class="login_card_inner">
-                <div class="card_header">ورود</div>
+    <div class="card_outer">
+        <div class="card_miidle">
+            <div class="card_inner">
+                <div class="card_header canter_text">ورود</div>
                 <div class="card_body">
                     <div class="card_form">
+                        <input id="login_mail_input" placeholder="ایمیل یا شماره تلفن" type="text" required>
                         <i class="material-icons card_icon">email</i>
-                        <input type="text">
                     </div>
                     <div class="card_form">
+                        <input placeholder="رمز عبور" type="password" required>
                         <i class="material-icons card_icon">lock</i>
-                        <input type="text">
                     </div>
                     <div class="canter_text">
-                        <button id="login_btn" class="btn">ورود</button>
+                        <button id="login_btn" class="btn" type="submit">ورود</button>
                     </div>
                     <div class="canter_text">
-                        <a href="#">رمزمو یادم رفته</a>
+                        <a class="underlineLink" href="#">رمزمو یادم رفته</a>
                     </div>
                 </div>
-                <div class="card_footer">
-
+                <div class="card_footer canter_text">
+                    <p>حساب کاربری ندارید؟ <a class="underlineLink" href="register.html">ثبت‌نام کنید</a></p>
                 </div>
             </div>
         </div>

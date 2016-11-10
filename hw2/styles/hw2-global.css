@@ -1,3 +1,9 @@
+/* 	global css rules in hw2 pages like font-family (@font-face), boxes, and login-register inputs
+	author: 9231018;
+	date: 11-11-16;
+	version: 0.1;
+*/
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -43,14 +49,60 @@
     font-size: 48px;
 }
 
+.material-icons.md-15 {
+    font-size: 15px;
+}
+
+.material-icons.md-10 {
+    font-size: 10px;
+}
+
+.material-icons.md-orange {
+    color: #F39C12;
+}
+
+.material-icons.md-gray {
+    color: #B2BABB;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../assets/fonts/Shabnam.eot');
+    src: url('../assets/fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Shabnam.woff') format('woff'),
+    url('../assets/fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../assets/fonts/Shabnam-Bold.eot');
+    src: url('../assets/fonts/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Shabnam-Bold.woff') format('woff'),
+    url('../assets/fonts/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../assets/fonts/Shabnam-Light.eot');
+    src: url('../assets/fonts/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Shabnam-Light.woff') format('woff'),
+    url('../assets/fonts/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
 html {
     height: 100%;
     background-color: #2874A6;
+    min-width: 420px;
+    font-family: Shabnam, sans-serif;
+    font-weight: normal;
 }
 
 body {
     margin: 0;
-    height: 80%;
+    height: 90%;
 }
 
 .site_header {
@@ -90,6 +142,16 @@ li {
 
 a {
     text-decoration: none;
+    color: #0275d8;
+    outline: none;
+}
+
+a:hover {
+    color: #014c8c;
+}
+
+a:focus {
+    border-color: #e74c3c;
 }
 
 .menu {
@@ -105,7 +167,7 @@ a {
 .menu .menu_item a {
     display: block;
     padding: 30px 0 30px 24px;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #ffffff;
     text-transform: uppercase;
@@ -119,21 +181,20 @@ a {
     max-width: 1200px;
 }
 
-.login_card_outer {
+.card_outer {
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.login_card_miidle {
+.card_miidle {
     display: table-cell;
     vertical-align: middle;
 }
 
-.login_card_inner {
+.card_inner {
     margin: 0 auto;
-    width: 320px;
-    height: 360px;
+    width: 25rem;
     text-align: right;
 
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
@@ -146,43 +207,17 @@ a {
 }
 
 .card_header {
-    display: table;
-    text-align: center;
     padding: 15px;
     border-bottom: 1px solid;
     box-sizing: border-box;
     width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .card_body {
-    padding: 2rem 2rem 1rem;
+    padding: 3rem 2rem 1rem;
     position: relative;
-}
-
-.card_form {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.card_form .card_icon {
-    position: absolute;
-    width: 2rem;
-    /*text-align: left;*/
-    right: 0;
-}
-
-.card_form input {
-    margin-right: 2rem;
-    width: calc(100% - 3rem);
-    border-style: none none solid;
-    box-sizing: content-box;
-    height: 2.1rem;
-    background-color: transparent;
-    border-color: #abb2b9;
-    text-align: right;
-    /*margin-bottom: 1rem;*/
-    /*margin-top: 0.2rem;*/
-    /*padding: 0.5rem 0 0.6rem;*/
 }
 
 .canter_text {
@@ -191,7 +226,7 @@ a {
 
 .btn {
     color: #fff !important;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 400;
 
     margin: 6px;
@@ -204,13 +239,39 @@ a {
 
     text-align: center;
     vertical-align: middle;
+
+    width: 100%;
 }
-.btn:hover {
+
+.btn:hover, .btn:focus {
     background-color: #30cfc0;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+    cursor: pointer;
 }
 
 .card_body a {
     color: #757575;
-    text-decoration: underline;
+}
+
+.underlineLink {
+    border-style: none none solid;
+    border-width: 1px;
+    padding-bottom: 2px;
+}
+
+.underlineLink:hover, .underlineLink:focus {
+    border-width: 2px;
+}
+
+.card_footer {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background-color: #d5d8dc;
+    font-size: 1.2rem;
+}
+
+.card_inner img {
+    border-radius: 50%;
 }
