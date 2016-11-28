@@ -1,9 +1,6 @@
 // Test Funcs
 // See Inspect Element's Console Log Output
 
-getGameXML();
-init();
-
 getNewGame(`
     <request>
     <rows>3</rows>
@@ -12,7 +9,43 @@ getNewGame(`
     </request>
 `);
 
-function init() {
+getGameXML(xmlParser);
+createElements();
+
+function xmlParser (xml) {
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xml, "text/xml");
+    var game = xmlDoc.getElementsByTagName("game")[0];
+    console.log(game);
+    var game_title = game.getAttribute("title");
+    console.log("game_title:", game_title);
+    var game_id = game.getAttribute("id");
+    console.log("game_id:", game_id);
+    var levels = [];
+    var levels_tag = game.getElementsByTagName("levels")[0];
+    var levels_list = levels_tag.getElementsByTagName("level");
+    for(i = 0; i<levels_list.length; i++){
+        var level = levels_list[i];
+        levels.push({
+            id: level.getAttribute("id"),
+            title: level.getAttribute("title"),
+            timer: level.getAttribute("timer"),
+            rows: level.getElementsByTagName("rows")[0].childNodes[0].nodeValue,
+            cols: level.getElementsByTagName("cols")[0].childNodes[0].nodeValue,
+            mines: level.getElementsByTagName("mines")[0].childNodes[0].nodeValue,
+            time: level.getElementsByTagName("time")[0].childNodes[0].nodeValue
+        });
+    }
+    console.log(levels);
+    return {
+        "game_title": game_title,
+        "game_id": game_id,
+        "levels": levels
+    }
+};
+
+
+function createElements() {
     var body = document.body;
 
     var alertModal = document.createElement("div");
@@ -71,12 +104,12 @@ function init() {
     counter.innerHTML = "123";
     top.appendChild(counter);
 
-     var smile = document.createElement("span");
+    var smile = document.createElement("span");
     smile.className = "smile";
     smile.setAttribute("data-value", "normal");
     top.appendChild(smile);
 
-     var counter = document.createElement("span");
+    var counter = document.createElement("span");
     counter.className = "counter";
     counter.innerHTML = "321";
     top.appendChild(counter);
