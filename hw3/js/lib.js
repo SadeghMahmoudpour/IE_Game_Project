@@ -20,6 +20,18 @@ function getGameXML(cb) {
                     <mines>5</mines>
                     <time>120</time>
                 </level>
+                <level id="2" title="advanced!" timer="false">
+                    <rows>15</rows>
+                    <cols>15</cols>
+                    <mines>4</mines>
+                    <time>200</time>
+                </level>
+                <level id="3" title="advanced2!" timer="true">
+                    <rows>5</rows>
+                    <cols>5</cols>
+                    <mines>4</mines>
+                    <time>60</time>
+                </level>
             </levels>
         </game>
     `;
