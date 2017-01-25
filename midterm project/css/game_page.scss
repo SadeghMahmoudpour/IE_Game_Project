@@ -1,0 +1,359 @@
+@import url("../vendor/slick-1.6.0/slick/slick-theme.css");
+
+@media (max-width: 600px) {
+  #header-caption {
+    p, h1 {
+      display: none;
+    }
+    h3 {
+      display: inline !important;
+    }
+  }
+}
+
+body {
+  direction: rtl;
+}
+
+/* Add a dark background color with a little bit see-through */
+.navbar {
+  position: fixed;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: 0;
+  font-size: 20px !important;
+  color: #8c8c8c !important;
+  height: 58px;
+  li a {
+    &:hover {
+      color: black !important;
+    }
+  }
+  .navbar-nav {
+    li.active a {
+      color: #8c8c8c !important;
+      background-color: #29292c !important;
+    }
+  }
+  #imaginary_container {
+    width: 20vw;
+    direction: ltr;
+    padding: 10px 15px;
+    .input-group .form-control {
+      direction: rtl;
+    }
+  }
+  .stylish-input-group .form-control {
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+  }
+
+  .stylish-input-group button {
+    border: 0;
+    background: transparent;
+  }
+  .content {
+    padding: 0 15px;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  float: left !important;
+}
+
+.header {
+  margin-top: 58px;
+  position: relative;
+  color: #d5d5d5;
+  width: 100%;
+  height: 40vh;
+  min-height: 200px;
+  #header-img-container {
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url("../images/images/call-of-duty-ghosts-pc-screenshot-1920x1080-005.jpg");
+    background-size: cover;
+    background-position: center center;
+    &:after {
+      content: '\A';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0.8;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+    }
+  }
+  #header-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      bottom: 5px;
+      .horiz-card {
+        display: flex;
+        align-items: flex-start;
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.tabs {
+  .nav-tabs {
+    padding-right: 0 !important;
+    background-color: #FAFAFA;
+    a {
+      color: #777;
+    }
+  }
+}
+
+#gametab-comments {
+  .comments-header {
+    display: flex;
+    align-items: center;
+    button {
+      float: left;
+    }
+  }
+  table {
+    td, th {
+      border: none;
+    }
+    .horiz-card {
+      height: 10vh;
+      min-height: 75px;
+      .horiz-card-img {
+        width: 100px;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  #load-more-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vh;
+    margin-top: 5vh;
+    font-size: 16px;
+    button {
+      border-radius: 3px;
+    }
+  }
+  .rating-container {
+    float: left;
+  }
+}
+
+#gametab-related_games {
+  .game-card {
+    margin: 10px 0;
+    img {
+      height: 20vh;
+    }
+  }
+}
+
+#gametab-gallery {
+  .slider-for-container {
+    height: 75vh;
+  }
+  .gallery-sliders {
+    direction: ltr;
+    .slick-next, .slick-prev {
+      background-color: black;
+      border-radius: 50%;
+      padding-top: 1px;
+    }
+    #gallery-slider-for{
+      height:75vh;
+      min-height: 400px;
+      .slick-list{
+        height: 100%;
+        .slick-track{
+          height: 100%;
+        }
+        .slick-item{
+          height: 100%;
+        }
+      }
+      img{
+        height: 100%;
+      }
+    }
+    #gallery-slider-nav {
+      margin-left: 25px;
+      margin-right: 25px;
+      .slick-item {
+        img {
+          height: 20vh;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#gametab-leaderboard {
+  img {
+    border-radius: 50%;
+  }
+  .number {
+    color: #82CD2D;
+  }
+  .player-name {
+    color: #337ab7;
+  }
+  .displacement {
+    color: #777;
+  }
+
+  .leader-table {
+    direction: rtl;
+    border: 1px solid #ddd;
+    th, td {
+      text-align: right;
+      vertical-align: middle;
+      border: none;
+    }
+    thead {
+      background-color: #eee;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      margin-left: 40px;
+    }
+    .fa-sort-desc, .fa-sort-asc {
+      padding-left: 5px;
+    }
+    .fa-sort-desc {
+      color: red;
+    }
+    .fa-sort-asc {
+      color: green;
+    }
+  }
+
+  #leader-header {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    justify-content: space-around;
+
+    .name {
+      margin-top: -20px
+    }
+    .vertical_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .horizontal_item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #second_place {
+      margin-top: 50px;
+      img {
+        border: 2px solid #C0C0C0;
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    #first_place {
+      img {
+        border: 2px solid #FFD700;
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    #third_place {
+      margin-top: 50px;
+      img {
+        border: 2px solid #cd7f32;
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .square {
+      z-index: 2;
+      font-size: 16px;
+      color: white;
+      width: 20px;
+      height: 30px;
+      background-color: #4d4d4d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .triangle1 {
+      content: "";
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 10px solid #4d4d4d;
+    }
+
+    .triangle2 {
+      content: "";
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 10px solid #4d4d4d;
+    }
+
+    .score_container {
+      position: relative;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+//.input-group {
+//  .input-group-addon {
+//    background: white !important;
+//    &:first-child {
+//      border-left: 0 !important;
+//      border-top-right-radius: 4px !important;
+//      border-bottom-right-radius: 4px !important;
+//      border-right: 1px solid #ccc;
+//      border-top-left-radius: 0 !important;
+//      border-bottom-left-radius: 0 !important;
+//    }
+//  }
+//  .form-control {
+//    &:last-child {
+//      border-top-left-radius: 4px !important;
+//      border-bottom-left-radius: 4px !important;
+//      border-top-right-radius: 0 !important;
+//      border-bottom-right-radius: 0 !important;
+//      border-left: 1px solid #ccc;
+//      border-right: 0;
+//    }
+//  }
+//}

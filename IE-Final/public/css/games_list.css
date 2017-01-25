@@ -1,0 +1,112 @@
+body {
+  direction: rtl; }
+
+.navbar {
+  position: fixed;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: 0;
+  font-size: 20px !important;
+  color: #8c8c8c !important;
+  height: 58px; }
+  .navbar li a:hover {
+    color: black !important; }
+  .navbar .navbar-nav li.active a {
+    color: #8c8c8c !important;
+    background-color: #29292c !important; }
+  .navbar #imaginary_container {
+    width: 20vw;
+    direction: ltr;
+    padding: 10px 15px; }
+    .navbar #imaginary_container .input-group .form-control {
+      direction: rtl; }
+  .navbar .stylish-input-group .form-control {
+    box-shadow: 0 0 0;
+    border-color: #ccc; }
+  .navbar .stylish-input-group button {
+    border: 0;
+    background: transparent; }
+  .navbar .content {
+    padding: 0 15px; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  float: left !important; }
+
+.header {
+  margin-top: 58px;
+  position: relative;
+  color: #d5d5d5;
+  width: 100%;
+  height: 20vh;
+  min-height: 200px; }
+  .header #header-img-container {
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url("../images/images/call-of-duty-ghosts-pc-screenshot-1920x1080-005.jpg");
+    background-size: cover;
+    background-position: center center; }
+    .header #header-img-container:after {
+      content: '\A';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0.8;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s; }
+  .header #header-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header #header-caption .content {
+      direction: rtl; }
+
+.games-list.content {
+  /*min-height: 40vh;*/
+  display: flex;
+  justify-content: space-between; }
+  .games-list.content #search-games {
+    width: 75%;
+    float: right;
+    overflow: hidden; }
+    .games-list.content #search-games .game-card {
+      margin: 10px 0; }
+      .games-list.content #search-games .game-card img {
+        height: 20vh; }
+    .games-list.content #search-games .col-sm-4 {
+      float: right !important; }
+  .games-list.content #filters {
+    width: 25%;
+    float: right;
+    overflow: hidden; }
+    .games-list.content #filters .jumbotron {
+      margin: 15px 0;
+      margin-left: 15px;
+      padding: 25px;
+      border-radius: 5px;
+      background-color: #FAFAFA;
+      border-right: 2px solid #d5d5d5;
+      border-top: 2px solid #d5d5d5; }
+      .games-list.content #filters .jumbotron .filter-input {
+        width: 100%;
+        cursor: pointer;
+        padding: 2px 5px;
+        margin: 2px; }
+        .games-list.content #filters .jumbotron .filter-input.filter-active, .games-list.content #filters .jumbotron .filter-input:hover, .games-list.content #filters .jumbotron .filter-input:focus {
+          background-color: #eee;
+          border: 1px solid #d5d5d5; }
+      .games-list.content #filters .jumbotron #star-filters .filter-input {
+        display: flex; }
+
+/*# sourceMappingURL=games_list.css.map */
+.rating-container .rating{
+  cursor: pointer !important;
+}

@@ -1,0 +1,93 @@
+@import url("../vendor/font-awesome-4.7.0/css/font-awesome.min.css");
+
+@font-face {
+    font-family: Shabnam;
+    src: url("../assets/fonts/Shabnam.eot");
+    src: url("../assets/fonts/Shabnam.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Shabnam.woff") format("woff"), url("../assets/fonts/Shabnam.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url("../assets/fonts/Shabnam-Bold.eot");
+    src: url("../assets/fonts/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Shabnam-Bold.woff") format("woff"), url("../assets/fonts/Shabnam-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url("../assets/fonts/Shabnam-Light.eot");
+    src: url("../assets/fonts/Shabnam-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Shabnam-Light.woff") format("woff"), url("../assets/fonts/Shabnam-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+html, body {
+    font-family: Shabnam, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 0;
+    font-size: 20px !important;
+    color: #8c8c8c !important;
+    height: 58px;
+}
+
+.navbar li a:hover {
+    color: black !important;
+}
+
+.navbar .navbar-nav li.active a {
+    color: #8c8c8c !important;
+    background-color: #29292c !important;
+}
+
+.navbar #imaginary_container {
+    width: 20vw;
+    direction: ltr;
+    padding: 10px 15px;
+}
+
+.navbar #imaginary_container .input-group .form-control {
+    direction: rtl;
+}
+
+.navbar .stylish-input-group .form-control {
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.navbar .stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.navbar .content {
+    padding: 0 15px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    float: left !important;
+}
+
+.col-sm-6,
+.col-sm-4 {
+    float: right;
+}
+
+.col-sm-6,
+.col-sm-4 {
+    float: right;
+}
+
+.content {
+    max-width: 1200px;
+    padding: 5px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-family: Shabnam, sans-serif !important;
+}
